@@ -3,6 +3,11 @@ const Btn = document.querySelector(".btn");
 const card = document.querySelector("#container");
 let errordata = "";
 
+user.addEventListener("keypress",(e)=>{
+if(e.key==="Enter"){
+  Btn.click();
+}
+})
 Btn.addEventListener("click", async () => {
   const data = user.value.trim();
   card.innerHTML="";
