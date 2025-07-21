@@ -9,8 +9,8 @@ body{
 .box1 {
   background-color: rgb(92, 106, 109);
 
-  max-width: 450px;
-  min-height: 450px;
+  width: 450px;
+  
   text-align: center;
   padding: 10px;
   margin: 10px auto;
@@ -29,10 +29,11 @@ body{
   margin-bottom: 10px;
 }
 .box2{
-  padding: 5px 10px;
+  padding: 8px 10px;
   border-radius: 20px;
   background: linear-gradient(151deg, #16cbba, #efff4f, #990a00);
   width: 300px;
+  height: 350px;
   margin: auto;
 }
 .btn {
@@ -59,7 +60,10 @@ body{
   margin: 8px 0;
   
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .box1{
+    width: 100%;
+  }
   .name {
     font-size: 1.8rem;
   }
@@ -74,7 +78,7 @@ body{
   }
 
   .input {
-    width: 70%;
+    width: 60%;
   }
 }
 
