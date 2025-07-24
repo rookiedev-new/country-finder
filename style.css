@@ -3,44 +3,49 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: gainsboro;
 }
 .box1 {
   background-color: rgb(92, 106, 109);
-
   width: 450px;
-  
+  min-height: 250px;
+  max-height: auto;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   margin: 10px auto;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .box1 h2 {
-  text-decoration: underline;
   font-size: 2.4rem;
   font-weight: bolder;
   margin-bottom: 10px;
 }
+.databox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 .input {
   width: 200px;
-  height: 20px;
+  height: 28px;
   padding-left: 10px;
   margin-bottom: 10px;
 }
-.box2{
+.btn {
+  height: 28px;
+  background: transparent;
+  border: 2px solid white;
+  font-size: 18px;
+  padding: 0 4px;
+}
+.box2 {
   padding: 8px 10px;
   border-radius: 20px;
   background: linear-gradient(151deg, #16cbba, #efff4f, #990a00);
-  width: 300px;
-  height: 350px;
+  width: 350px;
+  min-height: 100px;
   margin: auto;
-}
-.btn {
-  background: transparent;
-  border: 2px solid white;
-  font-size: 1rem;
-  padding: 2px 5px;
 }
 
 .name {
@@ -55,21 +60,23 @@ body{
   box-shadow: 5px 6px 5px 2px black;
   transition: 1s;
 }
-.box2 p{
-  font-size: 1.4rem;
+.box2 p {
+  font-size: 1.5rem;
   margin: 8px 0;
-  
 }
 @media (max-width: 600px) {
-  .box1{
-    width: 100%;
+  .box1 {
+    margin-top: 0;
+    width: auto;
   }
+ 
   .name {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
+  
 
   .box2 p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .box2 img {
@@ -81,4 +88,3 @@ body{
     width: 60%;
   }
 }
-
